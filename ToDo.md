@@ -23,10 +23,10 @@
   - ~~wait for 2 seconds~~
   - ~~should console 'order packed...' along with orderId: 123, foodDetails: 'Burger & Fries', packageDetails: 'Packed in eco-friendly box'~~
   - ~~should console 'delicering order'~~
-  - should call the deliver function
+  - ~~should call the deliver function~~
 
 - write a function for delivering order
-  - recieve the time when pack order copleted its execution
-  - wait for 5 seconds
-  - calculate time difference to current time.
-  - console 'food is delivered' with { orderId: 123, foodDetails: 'Burger & Fries', packageDetails: 'Packed in eco-friendly box', deliveryDetails: 'Delivered by John at 7:30 PM' }
+  - ~~recieve the time when pack order copleted its execution~~`
+  - ~~wait for 5 seconds~~`
+  - ~~calculate time difference to current time.~~`
+  - ~~console 'food is delivered' with { orderId: 123, foodDetails: 'Burger & `Fries', packageDetails: 'Packed in eco-friendly box', deliveryDetails: 'Delivered by John at 7:30 PM' }~~
