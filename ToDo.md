@@ -6,19 +6,19 @@
   - ~~should console order ready along with order id~~
   - ~~time when the execution is completed is passed to next~~
   - ~~should console preparing food...~~
-  - ~~return order details~~
+  - ~~call prepareOrder function~~
 
 - write a function for preparing order, which should be passed to setTimeOut
 
-  - recieve the time taken for execution for previous function
-  - wait for 3 sesconds
-  - calculate the time taken for the execution of the funciton
-  - should console 'food is ready' a long with food details
-  - should console packing food ...
+  - ~~recieve the time taken for execution for previous function~~
+  - ~~wait for 3 sesconds~~
+  - ~~calculate the time taken for the execution of the funciton~~
+  - ~~should console 'food is ready' a long with food details~~
   - should call packOrder function
 
 - write a function for packing ordre
 
+  - should console packing food ...
   - recieve the time last function is ececuted
   - wait for 2 seconds
   - should console 'order packed...' along with packing details
