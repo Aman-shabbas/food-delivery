@@ -26,19 +26,27 @@ export const takeOrder = () => {
 };
 
 const prepareOrder = (orderDetails) => {
-  printStatus(orderDetails);
+  const timeTakenToPrepare = secondsElapsedFrom(
+    orderDetails.placedTime
+  ).toFixed(2);
+
+  console.log(`[${timeTakenToPrepare}s] Preparing order`);
 
   setTimeout(() => {
     orderDetails.foodDetails = "Burger & Fries";
 
-    printOrderDetails(orderDetails, "Food is ready..");
+    printOrderDetails(orderDetails, "Food is ready");
 
     packOrder(orderDetails);
   }, 3 * 1000);
 };
 
 const packOrder = (orderDetails) => {
-  printStatus(orderDetails);
+  const timeTakenTillPacking = secondsElapsedFrom(
+    orderDetails.placedTime
+  ).toFixed(2);
+
+  console.log(`[${timeTakenTillPacking}s] Packing order..`);
 
   setTimeout(() => {
     orderDetails.packageDetails = "Packed in eco-friendly box";
@@ -49,7 +57,11 @@ const packOrder = (orderDetails) => {
 };
 
 const deliver = (orderDetails) => {
-  printStatus(orderDetails);
+  const timeTakenTillDelivery = secondsElapsedFrom(
+    orderDetails.placedTime
+  ).toFixed(2);
+
+  console.log(`[${timeTakenTillDelivery}s] Delivering order..`);
 
   setTimeout(() => {
     orderDetails.deliveryDetails = "Delivered by John at 7:30 PM";
